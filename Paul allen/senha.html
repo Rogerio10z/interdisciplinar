@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha</title>
+    <link rel="icon" href="microoosoft.png" type="image/x-icon">
+    <link rel="stylesheet" href="senha.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="logomicrosoft.png" alt="">
+        <h3>Insira a senha</h3>
+        
+        <form action="#" method="POST">
+            <input type="password" id="password" name="password" placeholder="Senha" required>
+    
+            <div class="forgot-password">
+                <a href="esqueceu.html" style="color:#2980b9;">Esqueceu a senha?</a><br><br>
+                <a href="#" style="color:#2980b9 ;">Outras maneiras de entrar </a>
+                <button class="button" type="button" onclick="logar()">Entrar</button>
+    
+            </form>
+        </div>
+            
+       
+    <script>
+        function logar(){
+            var password = document.getElementById("password").value;
+
+            if(password == "rogerio"){
+                location.href = "index.html";
+
+            }else{
+                alert("Senha Incorreta!")
+            }
+        }
+    </script>
+
+</body>
+</html>

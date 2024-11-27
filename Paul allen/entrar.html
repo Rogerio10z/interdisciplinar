@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="icon" href="microoosoft.png" type="image/x-icon">
+    <link rel="stylesheet" href="entrar.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="logomicrosoft.png" alt="">
+        <h3>Entrar</h3>
+        
+        <form action="#" method="POST">
+            <input type="username" id="username" name="username" placeholder="Email, telefone ou Skype" required>
+            <div class="forgot-password">
+                <a href="#">Não tem uma conta?</a>
+                <a href="#" style="color:#2980b9;">Crie uma!</a>
+            </div>
+            <button class="button" type="button" onclick="logar()">Avançar</button>
+        </form>
+    </div>
+    <script>
+        function logar(){
+            var username = document.getElementById("username").value;
+
+            if(username === "admin"){
+                location.href = "senha.html";
+            } else {
+                alert("Usuário Incorreto!");
+            }
+        }
+    </script>
+    <footer class="footer">
+        <div class="footer-link">
+            <a href="privacidade.html">Privacidade e status</a>
+        </div>
+    </footer>
+</body>
+</html>
